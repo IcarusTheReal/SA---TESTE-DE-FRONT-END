@@ -104,4 +104,25 @@ npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
 | 7 | Cards das salas | Grid de salas disponíveis |
 | 8 | Status das salas | Indicadores visuais de status |
 
+## Dados de Teste
+
+### Credenciais para Login
+javascript
+**Credenciais válidas para testes**
+Email: leonardo.silva@empresa.com.br
+Senha: SenhaSegura@123
+
+// Credenciais para testes negativos
+Email inválido: email-invalido
+Email não cadastrado: naoexiste@email.com
+Senha incorreta: senhaincorreta
+Elementos da Homepage Verificados
+Barra lateral desktop: 6 ícones (Logo, Pesquisar, Dashboard, Logs, Configurações, Pokémon)
+
+Barra mobile: Menu, Logo, Usuário
+
+Cards das salas: Sala 1304 até Sala 1309
+
+Status: Vermelho (1304, 1309) - Verde (1305, 1306, 1307, 1308)
+
 
