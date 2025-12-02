@@ -3,17 +3,6 @@
 ##  Sobre o Projeto
 Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos com **Cypress** para validação das funcionalidades das páginas **Login** e **Homepage** do sistema RACK+.
 
-##  Link do Repositório
-`https://github.com/[seu-usuario]/testes-e2e-rack-plus`
-
-##  Páginas Testadas
-
-| Página | Arquivo de Teste | Quantidade de Testes | Status |
-| :--- | :--- | :--- | :--- |
-| Login | `TESTE_LOGIN.cy.js` | 14 testes | ✅ Implementado |
-| Homepage | `TESTE_HOMEPAGE.cy.js` | 8 testes | ✅ Implementado |
-
----
 
 ##  Instruções para Execução
 
@@ -26,6 +15,7 @@ Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos co
 
 **Passo 1:** Instale as dependências
 bash
+
 npm install cypress --save-dev
 
 **Passo 2:** Configure a aplicação
@@ -49,6 +39,14 @@ npx cypress run
 npx cypress run --spec "TESTE_LOGIN.cy.js"
 
 npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
+
+##  Páginas Testadas
+
+| Página | Arquivo de Teste | Quantidade de Testes | Status |
+| :--- | :--- | :--- | :--- |
+| Login | `TESTE_LOGIN.cy.js` | 14 testes | ✅ Implementado |
+| Homepage | `TESTE_HOMEPAGE.cy.js` | 8 testes | ✅ Implementado |
+
 
 ##  Testes Realizados
 
