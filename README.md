@@ -25,6 +25,7 @@ Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos co
 **Passo 1:** Instale as dependências
 bash
 npm install cypress --save-dev
+
 **Passo 2:** Configure a aplicação
 Certifique-se que sua aplicação RACK+ está rodando em:
 
