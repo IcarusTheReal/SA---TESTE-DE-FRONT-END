@@ -1,4 +1,4 @@
-#  README - Testes E2E RACK+ (VERSÃO FINAL)
+# Testes E2E RACK+ 
 
 ##  Sobre o Projeto
 Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos com **Cypress** para validação das funcionalidades das páginas **Login** e **Homepage** do sistema RACK+.
