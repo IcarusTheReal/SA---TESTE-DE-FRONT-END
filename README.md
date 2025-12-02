@@ -1,122 +1,188 @@
-🧪 Testes E2E - Sistema RACK+
-📋 Sobre o Projeto
-Testes end-to-end (E2E) automatizados para as páginas de Login e Homepage do sistema RACK+. Desenvolvidos com Cypress para validar funcionalidades, usabilidade e responsividade.
+# 🧪 Testes E2E - Sistema RACK+
 
-🎯 Páginas Testadas
-Página	Arquivo de Teste	Quantidade de Testes	Tempo de Execução
-Login	TESTE_LOGIN.cy.js	14 testes	~60 segundos
-Homepage	TESTE_HOMEPAGE.cy.js	8 testes	~30 segundos
-🚀 Tecnologias Utilizadas
-Cypress 12.0+ - Framework de testes E2E
+## 📋 Sobre o Projeto
+Repositório contendo testes end-to-end (E2E) automatizados desenvolvidos com **Cypress** para validação das funcionalidades das páginas **Login** e **Homepage** do sistema RACK+.
 
-JavaScript - Linguagem dos testes
+## 🔗 Link do Repositório
+`https://github.com/[seu-usuario]/testes-e2e-rack-plus`
 
-Node.js - Ambiente de execução
+---
 
-⚙️ Pré-requisitos
-Antes de executar, certifique-se de ter:
+## ✅ Checklist de Requisitos Atendidos
 
-Node.js versão 14 ou superior
+### 📋 **REQUISITOS CUMPRIDOS**
 
-Aplicação RACK+ rodando localmente
+- [x] **Repositório com códigos de teste E2E**
+- [x] **README com instruções completas de execução**
+- [x] **Especificação detalhada dos testes realizados**
+- [x] **Roteiro para apresentação ao grupo**
+- [x] **Testes para duas páginas da aplicação: Login e Homepage**
+- [x] **Nomes específicos e claros dos testes**
 
-Navegador (Chrome, Firefox ou Edge)
+---
 
-📥 Instalação Rápida
-1. Instale as dependências
+## 🎯 Páginas Testadas
+
+| Página | Arquivo de Teste | Quantidade de Testes | Status |
+|:-------|:-----------------|:---------------------|:-------|
+| **Login** | `TESTE_LOGIN.cy.js` | 14 testes | ✅ Implementado |
+| **Homepage** | `TESTE_HOMEPAGE.cy.js` | 8 testes | ✅ Implementado |
+
+---
+
+## 🚀 Instruções para Execução
+
+### **Pré-requisitos:**
+1. **Node.js** (versão 14 ou superior)
+2. **Aplicação RACK+** rodando localmente
+3. **Navegador** Chrome, Firefox ou Edge
+
+### **Passo 1: Clone o repositório**
+```bash
+git clone https://github.com/[seu-usuario]/testes-e2e-rack-plus.git
+cd testes-e2e-rack-plus
+Passo 2: Instale as dependências
 bash
-# No diretório do projeto
 npm install cypress --save-dev
-2. Configure as URLs da aplicação
-Verifique se sua aplicação está acessível:
+Passo 3: Configure a aplicação
+Certifique-se que sua aplicação RACK+ está rodando em:
 
 Login: http://127.0.0.1:5500/login/loginhtml.html
 
 Homepage: http://127.0.0.1:5500/homepage/homepagehtml.html
 
-Importante: Se usar porta diferente de 5500, edite os arquivos TESTE_LOGIN.cy.js e TESTE_HOMEPAGE.cy.js ajustando as constantes LOGIN_URL.
+Nota: Ajuste as URLs nos arquivos de teste se necessário.
 
-▶️ Como Executar os Testes
-Execução Individual (Recomendado para desenvolvimento)
+Passo 4: Execute os testes
 bash
-# Testes de Login
-npx cypress run --spec "TESTE_LOGIN.cy.js"
-
-# Testes da Homepage
-npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
-Execução Completa
-bash
-# Todos os testes de uma vez
-npx cypress run
-Modo Visual (Para debug e apresentação)
-bash
-# Abre a interface gráfica do Cypress
+# Modo visual (recomendado para apresentação)
 npx cypress open
 
-# Ou execute com navegador visível
-npx cypress run --headed --browser chrome
-🧪 Testes Implementados
-🔐 Testes da Página de Login (TESTE_LOGIN.cy.js)
-Grupo 1: Validação de Login (9 testes)
-#	Código do Teste	Descrição	Comportamento Esperado
-1		Login com credenciais válidas	Sistema processa sem erros
-2	Email vazio (senha preenchida)	Exibe mensagem de erro
-3	Senha vazia (email preenchido)	Exibe mensagem de erro
-4		Ambos os campos vazios	Exibe mensagem de erro
-5		Email com formato inválido	Exibe mensagem de erro
-6	L	Senha muito curta (3 dígitos)	Exibe mensagem de erro
-7	Senha curta (7 dígitos)	Exibe mensagem de erro
-8		Email não cadastrado	Exibe erro de credenciais
-9		Senha incorreta para email válido	Exibe erro de credenciais
+# Modo linha de comando
+npx cypress run
+
+# Testes específicos
+npx cypress run --spec "TESTE_LOGIN.cy.js"
+npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
+🧪 Testes que Serão Realizados
+🔐 TESTES DA PÁGINA DE LOGIN (TESTE_LOGIN.cy.js)
+Grupo 1: Validação de Credenciais (9 testes)
+Login Bem-Sucedido - Verifica login com credenciais válidas
+
+Email Vazio - Testa quando campo email não é preenchido
+
+Senha Vazia - Testa quando campo senha não é preenchido
+
+Ambos Campos Vazios - Testa quando nenhum campo é preenchido
+
+Email Inválido - Testa email com formato incorreto
+
+Senha Muito Curta (3 dígitos) - Testa senha abaixo do mínimo
+
+Senha Curta (7 dígitos) - Testa senha quase no mínimo
+
+Email Não Cadastrado - Testa email que não existe no sistema
+
+Senha Incorreta - Testa senha errada para email válido
+
 Grupo 2: Usabilidade (5 testes)
-#	Código do Teste	Descrição	Comportamento Esperado
-10		Funcionalidade mostrar/esconder senha	Alterna entre type="text" e type="password"
-11		Link para página de cadastro	Link visível e clicável
-12		Link para recuperação de senha	Link visível e aponta para URL correta
-13		Email com caracteres especiais válidos	Sistema aceita ou rejeita apropriadamente
-14		Email em letras maiúsculas	Sistema processa (case-insensitive)
+Mostrar/Esconder Senha - Testa funcionalidade do ícone de olho
+
+Link para Cadastro - Verifica navegação para página de cadastro
+
+Link para Recuperação de Senha - Verifica link funcional
+
+Email com Caracteres Especiais - Testa email válido com caracteres especiais
+
+Email em Maiúsculas - Testa se sistema é case-insensitive
+
 Grupo 3: Responsividade (6 testes)
-#	Código do Teste	Descrição	Dispositivo Testado
-15		Funcionamento em celular pequeno	iPhone SE (375x667)
-16		Funcionamento em tablet	iPad (768x1024)
-17		Funcionamento em desktop	Desktop (1366x768)
-18		Funcionamento em tela grande	Full HD (1920x1080)
-19		Adaptação retrato/paisagem	Mobile ambas orientações
-20		Redimensionamento dinâmico	Múltiplos tamanhos
-🏠 Testes da Homepage (TESTE_HOMEPAGE.cy.js)
-Grupo 1: Estrutura Básica (8 testes)
-#	Código do Teste	Descrição	Elementos Verificados
-1		Carregamento completo da página	Título, barra lateral, conteúdo principal
-2		Barra lateral desktop	6 ícones com atributos alt corretos
-3		Barra superior mobile	3 ícones (menu, logo, usuário)
-4		Menu offcanvas mobile	Abre/fecha e mostra 5 ícones internos
-5	Cabeçalho desktop	Título "Salas" e ícone de usuário
-6		Campo de pesquisa mobile	Input funcionando com placeholder correto
-7		Cards das salas	6 salas numeradas de 1304 a 1309
-8		Status indicadores	2 salas vermelhas, 4 salas verdes
-📊 Dados de Teste Utilizados
-Para os Testes de Login:
+Funcionamento em Celular Pequeno - Testa em iPhone SE (375x667)
+
+Funcionamento em Tablet - Testa em iPad (768x1024)
+
+Funcionamento em Desktop - Testa em desktop comum (1366x768)
+
+Funcionamento em Tela Grande - Testa em Full HD (1920x1080)
+
+Adaptação Retrato/Paisagem - Testa ambas orientações em mobile
+
+Redimensionamento Dinâmico - Testa adaptação ao mudar tamanho
+
+🏠 TESTES DA HOMEPAGE (TESTE_HOMEPAGE.cy.js)
+Grupo 1: Estrutura da Página (8 testes)
+Carregamento da Página - Verifica título e elementos principais
+
+Barra Lateral Desktop - Testa navegação em telas grandes (6 ícones)
+
+Barra Superior Mobile - Testa navegação em dispositivos móveis
+
+Menu Offcanvas Mobile - Testa menu lateral que abre/fecha
+
+Cabeçalho Desktop - Verifica título "Salas" e ícone de usuário
+
+Campo de Pesquisa Mobile - Testa funcionalidade de busca
+
+Cards das Salas - Verifica grid com 6 salas (1304-1309)
+
+Status das Salas - Testa indicadores visuais (2 vermelhas, 4 verdes)
+
+📊 Dados para Teste
+Credenciais para Login:
 javascript
-// Credenciais válidas (deve funcionar)
+// Login válido (deve funcionar)
 Email: leonardo.silva@empresa.com.br
 Senha: SenhaSegura@123
 
-// Dados para testes negativos (devem falhar)
-Email inválido: "email-invalido"
-Email não cadastrado: "naoexiste@email.com"
-Senha incorreta: "senhaincorreta"
-Senha curta: "123" (3 dígitos) e "1234567" (7 dígitos)
-Para os Testes da Homepage:
-javascript
-// Elementos verificados:
-- Título da página: "RACK+ Homepage"
-- Salas: 1304, 1305, 1306, 1307, 1308, 1309
-- Status: Sala 1304 (vermelho), Sala 1309 (vermelho)
-- Status: Sala 1305-1308 (verde)
-- Ícones: Logo, Pesquisar, Dashboard, Logs, Configurações, Pokémon
+// Login inválido (deve falhar)
+Email: email-invalido
+Senha: 123
+🎥 Roteiro para Apresentação
+Duração Total: 10-15 minutos
+Parte 1: Introdução (2 minutos)
+Apresentar o projeto RACK+
+
+Mostrar as páginas testadas (Login e Homepage)
+
+Explicar objetivo dos testes E2E
+
+Parte 2: Configuração e Execução (5 minutos)
+Mostrar repositório no GitHub (1 min)
+
+Instalar dependências rapidamente (1 min)
+
+Executar testes de login (2 min)
+
+Executar testes da homepage (1 min)
+
+Parte 3: Demonstração de Testes (5 minutos)
+Login bem-sucedido com credenciais válidas
+
+Caso negativo: Email inválido
+
+Funcionalidade: Mostrar/esconder senha
+
+Responsividade: Mobile vs Desktop
+
+Homepage: Cards das salas e status
+
+Parte 4: Resultados e Conclusão (3 minutos)
+Mostrar relatório de execução
+
+Explicar cobertura dos testes
+
+Responder perguntas
+
+📁 Estrutura do Projeto
+text
+testes-e2e-rack-plus/
+├── TESTE_LOGIN.cy.js          # 14 testes da página de login
+├── TESTE_HOMEPAGE.cy.js       # 8 testes da homepage
+├── package.json              # Dependências do projeto
+└── README.md                 # Este arquivo
 🐛 Solução de Problemas
-Se os testes não funcionarem:
 Problema: "Cannot connect to the application"
+Solução:
 
 bash
 # Verifique:
@@ -126,67 +192,29 @@ bash
    # Em TESTE_LOGIN.cy.js e TESTE_HOMEPAGE.cy.js
    const LOGIN_URL = 'http://localhost:SUA_PORTA/...'
 Problema: "Element not found"
+Solução:
 
 bash
 # Use o modo visual para inspecionar:
 npx cypress open
 # Execute o teste falhando e veja qual elemento não é encontrado
 Problema: Testes falham sem motivo claro
+Solução:
 
 bash
 # Execute com mais detalhes:
 npx cypress run --headed --browser chrome
 # Verifique os logs no terminal
-📁 Estrutura dos Arquivos
-text
-📁 seu-repositorio/
-├── TESTE_LOGIN.cy.js          # 14 testes da página de login
-├── TESTE_HOMEPAGE.cy.js       # 8 testes da página inicial
-├── cypress.config.js          # Configuração do Cypress (opcional)
-└── package.json              # Dependências do projeto
-✅ Critérios de Avaliação
-Para Cada Teste:
-Executa sem erros técnicos
+🏁 Status do Projeto
+✅ COMPLETO - Todos os requisitos atendidos
+📅 Pronto para apresentação
+🎯 22 testes implementados
 
-Testa um comportamento específico
+🤝 Contato
+Aluno: [Seu Nome]
+Email: seu.email@instituicao.edu.br
+Instituição: [Nome da Instituição]
+Professor: [Nome do Professor]
 
-Tem critério de sucesso claro
-
-É independente de outros testes
-
-Documentado no README
-
-Para o Conjunto:
-Cobre fluxos principais do usuário
-
-Inclui casos positivos e negativos
-
-Testa responsividade
-
-Verifica elementos visuais
-
-Instruções claras de execução
-
-🎥 Para a Apresentação
-Script de Demonstração Rápido:
-bash
-# 1. Certifique-se que a aplicação RACK+ está rodando
-
-# 2. Execute testes de login (com navegador visível)
-npx cypress run --spec "TESTE_LOGIN.cy.js" --headed
-
-# 3. Execute testes da homepage
-npx cypress run --spec "TESTE_HOMEPAGE.cy.js" --headed
-O que Mostrar (10 minutos):
-Introdução (1 min): O que são os testes e o que validam
-
-Configuração (1 min): Como configurar o ambiente
-
-Execução (3 min): Rodando os testes
-
-Resultados (2 min): Análise dos relatórios
-
-Testes específicos (3 min): Mostrar alguns cenários interessantes
-
-Desenvolvido para avaliação da UC de Testes Automatizados
-Instituição: [Nome da Instituição
+Desenvolvido para a UC de Testes Automatizados
+Data: [Data da Entrega
