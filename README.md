@@ -43,11 +43,10 @@ npx cypress open
 npx cypress run
 
 **Testes específicos**
+
 npx cypress run --spec "TESTE_LOGIN.cy.js"
 
 npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
-
-
 
 ## 🧪 Testes Realizados
 
