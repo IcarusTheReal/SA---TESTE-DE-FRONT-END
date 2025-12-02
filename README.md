@@ -22,6 +22,32 @@ Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos co
 * **Aplicação RACK+** rodando localmente
 * Navegador **Chrome**, **Firefox** ou **Edge**
 
+**Passo 1:** Instale as dependências
+bash
+npm install cypress --save-dev
+**Passo 2:** Configure a aplicação
+Certifique-se que sua aplicação RACK+ está rodando em:
+
+Login: http://127.0.0.1:5500/login/loginhtml.html
+
+Homepage: http://127.0.0.1:5500/homepage/homepagehtml.html
+
+Nota: Ajuste as URLs nos arquivos de teste se necessário.
+
+**Passo 3** Execute os testes
+bash
+# Modo visual (recomendado para apresentação)
+npx cypress open
+
+# Modo linha de comando
+npx cypress run
+
+# Testes específicos
+npx cypress run --spec "TESTE_LOGIN.cy.js"
+npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
+
+
+
 ## 🧪 Testes Realizados
 
 ### 🔐 Página de Login (login.spec.js)
