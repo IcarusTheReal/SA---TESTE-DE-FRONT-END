@@ -48,9 +48,9 @@ npx cypress run --spec "TESTE_LOGIN.cy.js"
 
 npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
 
-## 🧪 Testes Realizados
+##  Testes Realizados
 
-### 🔐 Página de Login (login.spec.js)
+###  Página de Login (login.spec.js)
 
 #### Testes de Funcionalidade (9 testes)
 
@@ -87,7 +87,7 @@ npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
 | 19 | Retrato e paisagem | Adaptação entre orientações |
 | 20 | Redimensionamento | Adaptação ao mudar tamanho |
 
-### 🏠 Página Homepage (homepage.spec.js)
+###  Página Homepage (homepage.spec.js)
 
 #### Testes de Estrutura (8 testes)
 
