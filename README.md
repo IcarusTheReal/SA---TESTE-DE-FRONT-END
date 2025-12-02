@@ -52,8 +52,8 @@ npx cypress run
 # Testes específicos (headless)
 npx cypress run --spec "TESTE_LOGIN.cy.js"
 npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
-🧪 Testes que Serão Realizados
-🔐 TESTES DA PÁGINA DE LOGIN (TESTE_LOGIN.cy.js)
+## Testes que Serão Realizados
+### TESTES DA PÁGINA DE LOGIN (TESTE_LOGIN.cy.js)
 Grupo 1: Validação de Credenciais (9 testes)
 
 Login Bem-Sucedido - Verifica login com credenciais válidas
@@ -100,7 +100,7 @@ Adaptação Retrato/Paisagem - Testa ambas orientações em mobile
 
 Redimensionamento Dinâmico - Testa adaptação ao mudar tamanho
 
-🏠 TESTES DA HOMEPAGE (TESTE_HOMEPAGE.cy.js)
+### TESTES DA HOMEPAGE (TESTE_HOMEPAGE.cy.js)
 Grupo 1: Estrutura da Página (8 testes)
 
 Carregamento da Página - Verifica título e elementos principais
