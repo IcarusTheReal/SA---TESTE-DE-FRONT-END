@@ -33,7 +33,6 @@ Login: http://127.0.0.1:5500/login/loginhtml.html
 
 Homepage: http://127.0.0.1:5500/homepage/homepagehtml.html
 
-Nota: Ajuste as URLs nos arquivos de teste se necessário.
 
 **Passo 3** Execute os testes
 bash
@@ -45,6 +44,7 @@ npx cypress run
 
 **Testes específicos**
 npx cypress run --spec "TESTE_LOGIN.cy.js"
+
 npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
 
 
