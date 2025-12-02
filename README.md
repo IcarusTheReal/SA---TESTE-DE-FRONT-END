@@ -106,6 +106,7 @@ npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
 ## Desenvolvido para avaliação da SA de Teste de Front-end
 
 **Aluno:** Leonardo Silva
+
 **Instituição** Senai CTTI
 
 
