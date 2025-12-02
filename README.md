@@ -1,12 +1,12 @@
-# 🧪 README - Testes E2E RACK+ (VERSÃO FINAL)
+#  README - Testes E2E RACK+ (VERSÃO FINAL)
 
-## 📋 Sobre o Projeto
+##  Sobre o Projeto
 Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos com **Cypress** para validação das funcionalidades das páginas **Login** e **Homepage** do sistema RACK+.
 
-## 🔗 Link do Repositório
+##  Link do Repositório
 `https://github.com/[seu-usuario]/testes-e2e-rack-plus`
 
-## 🎯 Páginas Testadas
+##  Páginas Testadas
 
 | Página | Arquivo de Teste | Quantidade de Testes | Status |
 | :--- | :--- | :--- | :--- |
@@ -15,16 +15,16 @@ Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos co
 
 ---
 
-## 🚀 Instruções para Execução
+##  Instruções para Execução
 
 ### Pré-requisitos:
 * **Node.js** (versão 14 ou superior)
 * **Aplicação RACK+** rodando localmente
 * Navegador **Chrome**, **Firefox** ou **Edge**
 
-## 🧪 Testes Realizados
+##  Testes Realizados
 
-### 🔐 Página de Login (login.spec.js)
+###  Página de Login (login.spec.js)
 
 #### Testes de Funcionalidade (9 testes)
 
@@ -61,7 +61,7 @@ Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos co
 | 19 | Retrato e paisagem | Adaptação entre orientações | 375x812 e 812x375 |
 | 20 | Redimensionamento | Adaptação ao mudar tamanho | Múltiplos viewports |
 
-### 🏠 Página Homepage (homepage.spec.js)
+###  Página Homepage (homepage.spec.js)
 
 #### Testes de Estrutura (8 testes)
 
