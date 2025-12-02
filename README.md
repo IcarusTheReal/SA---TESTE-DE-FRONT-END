@@ -22,33 +22,33 @@ Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos co
 * **Aplicação RACK+** rodando localmente
 * Navegador **Chrome**, **Firefox** ou **Edge**
 
-##  Testes Realizados
+## 🧪 Testes Realizados
 
-###  Página de Login (login.spec.js)
+### 🔐 Página de Login
 
 #### Testes de Funcionalidade (9 testes)
 
-| # | Teste | Descrição | Critério de Sucesso |
-| :---: | :--- | :--- | :--- |
-| 1 | Login bem-sucedido | Login com credenciais válidas | Sistema processa o login |
-| 2 | Email vazio | Campo email não preenchido | Exibe mensagem de erro |
-| 3 | Senha vazia | Campo senha não preenchido | Exibe mensagem de erro |
-| 4 | Ambos vazios | Nenhum campo preenchido | Exibe mensagem de erro |
-| 5 | Email inválido | Email sem formato correto | Exibe mensagem de erro |
-| 6 | Senha curta (3 dígitos) | Senha com apenas 3 caracteres | Exibe mensagem de erro |
-| 7 | Senha curta (7 dígitos) | Senha com 7 caracteres | Exibe mensagem de erro |
-| 8 | Email não cadastrado | Email inexistente no sistema | Exibe mensagem de erro |
-| 9 | Senha incorreta | Senha errada para email válido | Exibe mensagem de erro |
+| # | Teste | Descrição |
+| :---: | :--- | :--- |
+| 1 | Login bem-sucedido | Login com credenciais válidas |
+| 2 | Email vazio | Campo email não preenchido |
+| 3 | Senha vazia | Campo senha não preenchido |
+| 4 | Ambos vazios | Nenhum campo preenchido |
+| 5 | Email inválido | Email sem formato correto |
+| 6 | Senha curta (3 dígitos) | Senha com apenas 3 caracteres |
+| 7 | Senha curta (7 dígitos) | Senha com 7 caracteres |
+| 8 | Email não cadastrado | Email inexistente no sistema |
+| 9 | Senha incorreta | Senha errada para email válido |
 
 #### Testes de Usabilidade (5 testes)
 
-| # | Teste | Descrição | Critério de Sucesso |
-| :---: | :--- | :--- | :--- |
-| 10 | Mostrar/esconder senha | Funcionalidade do ícone de olho | Alterna entre mostrar/esconder |
-| 11 | Link para cadastro | Navegação para página de cadastro | Link visível e funcional |
-| 12 | Link recuperação de senha | Link "Esqueceu sua senha?" | Link visível e funcional |
-| 13 | Email com caracteres especiais | Email válido com caracteres especiais | Sistema processa corretamente |
-| 14 | Email em maiúsculas | Email em LETRAS MAIÚSCULAS | Sistema processa (case-insensitive) |
+| # | Teste | Descrição |
+| :---: | :--- | :--- |
+| 10 | Mostrar/esconder senha | Funcionalidade do ícone de olho |
+| 11 | Link para cadastro | Navegação para página de cadastro |
+| 12 | Link recuperação de senha | Link "Esqueceu sua senha?" |
+| 13 | Email com caracteres especiais | Email válido com caracteres especiais |
+| 14 | Email em maiúsculas | Email em LETRAS MAIÚSCULAS |
 
 #### Testes de Responsividade (6 testes)
 
@@ -61,7 +61,7 @@ Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos co
 | 19 | Retrato e paisagem | Adaptação entre orientações | 375x812 e 812x375 |
 | 20 | Redimensionamento | Adaptação ao mudar tamanho | Múltiplos viewports |
 
-###  Página Homepage (homepage.spec.js)
+### 🏠 Página Homepage (homepage.spec.js)
 
 #### Testes de Estrutura (8 testes)
 
