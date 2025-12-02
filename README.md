@@ -29,6 +29,7 @@ Homepage: http://127.0.0.1:5500/homepage/homepagehtml.html
 **Passo 3** Execute os testes
 bash
 **Modo visual (recomendado para apresentação)**
+
 npx cypress open
 
 **Modo linha de comando**
