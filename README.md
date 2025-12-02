@@ -24,7 +24,7 @@ Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos co
 
 ## 🧪 Testes Realizados
 
-### 🔐 Página de Login
+### 🔐 Página de Login (login.spec.js)
 
 #### Testes de Funcionalidade (9 testes)
 
@@ -52,29 +52,28 @@ Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos co
 
 #### Testes de Responsividade (6 testes)
 
-| # | Teste | Descrição | Viewport Testado |
-| :---: | :--- | :--- | :--- |
-| 15 | Celular pequeno | Funcionamento em iPhone SE | 375x667 pixels |
-| 16 | Tablet | Funcionamento em tablets | 768x1024 pixels |
-| 17 | Desktop | Funcionamento em desktop comum | 1366x768 pixels |
-| 18 | Tela grande | Funcionamento em Full HD | 1920x1080 pixels |
-| 19 | Retrato e paisagem | Adaptação entre orientações | 375x812 e 812x375 |
-| 20 | Redimensionamento | Adaptação ao mudar tamanho | Múltiplos viewports |
+| # | Teste | Descrição |
+| :---: | :--- | :--- |
+| 15 | Celular pequeno | Funcionamento em iPhone SE |
+| 16 | Tablet | Funcionamento em tablets |
+| 17 | Desktop | Funcionamento em desktop comum |
+| 18 | Tela grande | Funcionamento em Full HD |
+| 19 | Retrato e paisagem | Adaptação entre orientações |
+| 20 | Redimensionamento | Adaptação ao mudar tamanho |
 
 ### 🏠 Página Homepage (homepage.spec.js)
 
 #### Testes de Estrutura (8 testes)
 
-| # | Teste | Descrição | Elementos Verificados |
-| :---: | :--- | :--- | :--- |
-| 1 | Carregamento da página | Verifica estrutura básica | Título, barra lateral, conteúdo |
-| 2 | Barra lateral desktop | Navegação em telas grandes | 6 ícones com textos alternativos |
-| 3 | Barra superior mobile | Navegação em dispositivos móveis | 3 ícones principais |
-| 4 | Menu offcanvas mobile | Menu lateral mobile | 5 ícones e funcionalidade de abrir/fechar |
-| 5 | Cabeçalho desktop | Área superior em desktop | Título "Salas" e ícone de usuário |
-| 6 | Campo de pesquisa mobile | Funcionalidade de busca em mobile | Input e ícone de lupa |
-| 7 | Cards das salas | Grid de salas disponíveis | 6 salas numeradas (1304-1309) |
-| 8 | Status das salas | Indicadores visuais de status | 2 vermelhas (problema) e 4 verdes (OK) |
-
+| # | Teste | Descrição |
+| :---: | :--- | :--- |
+| 1 | Carregamento da página | Verifica estrutura básica |
+| 2 | Barra lateral desktop | Navegação em telas grandes |
+| 3 | Barra superior mobile | Navegação em dispositivos móveis |
+| 4 | Menu offcanvas mobile | Menu lateral mobile |
+| 5 | Cabeçalho desktop | Área superior em desktop |
+| 6 | Campo de pesquisa mobile | Funcionalidade de busca em mobile |
+| 7 | Cards das salas | Grid de salas disponíveis |
+| 8 | Status das salas | Indicadores visuais de status |
 
 
