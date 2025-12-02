@@ -22,95 +22,59 @@ Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos co
 * **Aplicação RACK+** rodando localmente
 * Navegador **Chrome**, **Firefox** ou **Edge**
 
-# 🧪 Testes Implementados
+## 🧪 Testes Realizados
 
-### 🔐 Página de Login
+### 🔐 Página de Login (login.spec.js)
 
-| Grupo | Arquivo | Quantidade de Testes | Status |
-| :--- | :--- | :---: | :--- |
-| Validação de Login | `TESTE_LOGIN.cy.js` | 9 testes | ✅ Implementado |
-| Usabilidade | `TESTE_LOGIN.cy.js` | 5 testes | ✅ Implementado |
-| Responsividade | `TESTE_LOGIN.cy.js` | 6 testes | ✅ Implementado |
+#### Testes de Funcionalidade (9 testes)
 
----
+| # | Teste | Descrição | Critério de Sucesso |
+| :---: | :--- | :--- | :--- |
+| 1 | Login bem-sucedido | Login com credenciais válidas | Sistema processa o login |
+| 2 | Email vazio | Campo email não preenchido | Exibe mensagem de erro |
+| 3 | Senha vazia | Campo senha não preenchido | Exibe mensagem de erro |
+| 4 | Ambos vazios | Nenhum campo preenchido | Exibe mensagem de erro |
+| 5 | Email inválido | Email sem formato correto | Exibe mensagem de erro |
+| 6 | Senha curta (3 dígitos) | Senha com apenas 3 caracteres | Exibe mensagem de erro |
+| 7 | Senha curta (7 dígitos) | Senha com 7 caracteres | Exibe mensagem de erro |
+| 8 | Email não cadastrado | Email inexistente no sistema | Exibe mensagem de erro |
+| 9 | Senha incorreta | Senha errada para email válido | Exibe mensagem de erro |
 
-### 🏠 Página Homepage
+#### Testes de Usabilidade (5 testes)
 
-| Grupo | Arquivo | Quantidade de Testes | Status |
-| :--- | :--- | :---: | :--- |
-| Estrutura da Página | `TESTE_HOMEPAGE.cy.js` | 8 testes | ✅ Implementado |
+| # | Teste | Descrição | Critério de Sucesso |
+| :---: | :--- | :--- | :--- |
+| 10 | Mostrar/esconder senha | Funcionalidade do ícone de olho | Alterna entre mostrar/esconder |
+| 11 | Link para cadastro | Navegação para página de cadastro | Link visível e funcional |
+| 12 | Link recuperação de senha | Link "Esqueceu sua senha?" | Link visível e funcional |
+| 13 | Email com caracteres especiais | Email válido com caracteres especiais | Sistema processa corretamente |
+| 14 | Email em maiúsculas | Email em LETRAS MAIÚSCULAS | Sistema processa (case-insensitive) |
+
+#### Testes de Responsividade (6 testes)
+
+| # | Teste | Descrição | Viewport Testado |
+| :---: | :--- | :--- | :--- |
+| 15 | Celular pequeno | Funcionamento em iPhone SE | 375x667 pixels |
+| 16 | Tablet | Funcionamento em tablets | 768x1024 pixels |
+| 17 | Desktop | Funcionamento em desktop comum | 1366x768 pixels |
+| 18 | Tela grande | Funcionamento em Full HD | 1920x1080 pixels |
+| 19 | Retrato e paisagem | Adaptação entre orientações | 375x812 e 812x375 |
+| 20 | Redimensionamento | Adaptação ao mudar tamanho | Múltiplos viewports |
+
+### 🏠 Página Homepage (homepage.spec.js)
+
+#### Testes de Estrutura (8 testes)
+
+| # | Teste | Descrição | Elementos Verificados |
+| :---: | :--- | :--- | :--- |
+| 1 | Carregamento da página | Verifica estrutura básica | Título, barra lateral, conteúdo |
+| 2 | Barra lateral desktop | Navegação em telas grandes | 6 ícones com textos alternativos |
+| 3 | Barra superior mobile | Navegação em dispositivos móveis | 3 ícones principais |
+| 4 | Menu offcanvas mobile | Menu lateral mobile | 5 ícones e funcionalidade de abrir/fechar |
+| 5 | Cabeçalho desktop | Área superior em desktop | Título "Salas" e ícone de usuário |
+| 6 | Campo de pesquisa mobile | Funcionalidade de busca em mobile | Input e ícone de lupa |
+| 7 | Cards das salas | Grid de salas disponíveis | 6 salas numeradas (1304-1309) |
+| 8 | Status das salas | Indicadores visuais de status | 2 vermelhas (problema) e 4 verdes (OK) |
 
 
-mepage)
 
-Explicar objetivo dos testes E2E
-
-Parte 2: Configuração e Execução (5 minutos)
-Mostrar repositório no GitHub (1 min)
-
-Instalar dependências rapidamente (1 min)
-
-Executar testes de login (2 min)
-
-Executar testes da homepage (1 min)
-
-Parte 3: Demonstração de Testes (5 minutos)
-Login bem-sucedido com credenciais válidas
-
-Caso negativo: Email inválido
-
-Funcionalidade: Mostrar/esconder senha
-
-Responsividade: Mobile vs Desktop
-
-Homepage: Cards das salas e status
-
-Parte 4: Resultados e Conclusão (3 minutos)
-Mostrar relatório de execução
-
-Explicar cobertura dos testes
-
-Responder perguntas
-
-📊 Dados para Demonstração
-Credenciais de Teste:
-JavaScript
-
-// Login válido (deve funcionar)
-Email: leonardo.silva@empresa.com.br
-Senha: SenhaSegura@123
-
-// Login inválido (deve falhar)
-Email: email-invalido
-Senha: 123
-Comandos para Apresentação:
-Bash
-
-# Para mostrar todos os testes rapidamente
-npx cypress run --spec "TESTE_LOGIN.cy.js" --headed --browser chrome
-npx cypress run --spec "TESTE_HOMEPAGE.cy.js" --headed --browser chrome
-🐛 Solução de Problemas Durante a Apresentação
-Se algo der errado:
-
-Aplicação não está rodando: Verifique servidor local
-
-Porta incorreta: Ajuste URLs nos arquivos de teste
-
-Elementos não encontrados: Mostre o HTML da aplicação real
-
-✅ Checklist para o Professor/Avaliador
-Repositório com código E2E ✅
-
-README com instruções completas ✅
-
-Testes para duas páginas ✅
-
-Nomes específicos e claros ✅
-
-Roteiro para apresentação ✅
-
-Instruções de execução ✅
-
-Especificação dos testes ✅
-
-Desenvolvido para: UC de Testes Automatizados Aluno: [Seu Nome] Professor: [Nome do Professor] Instituição: [Nome da Instituição] Data: [Data da Entrega]
