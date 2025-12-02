@@ -18,6 +18,8 @@ Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos co
 ##  Instruções para Execução
 
 ### Pré-requisitos:
+
+* **Cypress 12.0+** - Framework de testes E2E
 * **Node.js** (versão 14 ou superior)
 * **Aplicação RACK+** rodando localmente
 * Navegador **Chrome**, **Firefox** ou **Edge**
