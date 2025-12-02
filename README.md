@@ -14,7 +14,6 @@ Repositório com **testes end-to-end (E2E) automatizados**, desenvolvidos em Cyp
 * Navegador **Chrome**, **Firefox** ou **Edge**
 
 **Passo 1:** Instale as dependências
-bash
 
 npm install cypress --save-dev
 
@@ -27,7 +26,7 @@ Homepage: http://127.0.0.1:5500/homepage/homepagehtml.html
 
 
 **Passo 3** Execute os testes
-bash
+
 **Modo visual (recomendado para apresentação)**
 
 npx cypress open
