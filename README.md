@@ -1,7 +1,7 @@
 # Testes E2E RACK+ 
 
 ##  Sobre o Projeto
-Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos com **Cypress** para validação das funcionalidades das páginas **Login** e **Homepage** do sistema RACK+.
+Repositório com **testes end-to-end (E2E) automatizados**, desenvolvidos em Cypress, para garantir o correto funcionamento, a usabilidade e a responsividade das páginas de **Login** e **Homepage** do sistema RACK+.
 
 
 ##  Instruções para Execução
