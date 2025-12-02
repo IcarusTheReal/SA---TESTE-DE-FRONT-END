@@ -22,110 +22,26 @@ Repositório contendo **testes end-to-end (E2E) automatizados** desenvolvidos co
 * **Aplicação RACK+** rodando localmente
 * Navegador **Chrome**, **Firefox** ou **Edge**
 
-### Passo 1: Clone o repositório
+# 🧪 Testes Implementados
 
-```bash
-git clone [https://github.com/](https://github.com/)[seu-usuario]/testes-e2e-rack-plus.git
-cd testes-e2e-rack-plus
-Passo 2: Instale as dependências
-Bash
+### 🔐 Página de Login
 
-npm install cypress --save-dev
-Passo 3: Configure a aplicação
-Certifique-se que sua aplicação RACK+ está rodando em:
+| Grupo | Arquivo | Quantidade de Testes | Status |
+| :--- | :--- | :---: | :--- |
+| Validação de Login | `TESTE_LOGIN.cy.js` | 9 testes | ✅ Implementado |
+| Usabilidade | `TESTE_LOGIN.cy.js` | 5 testes | ✅ Implementado |
+| Responsividade | `TESTE_LOGIN.cy.js` | 6 testes | ✅ Implementado |
 
-Login: http://127.0.0.1:5500/login/loginhtml.html
+---
 
-Homepage: http://127.0.0.1:5500/homepage/homepagehtml.html
+### 🏠 Página Homepage
 
-Nota: Ajuste as URLs nos arquivos de teste se necessário.
+| Grupo | Arquivo | Quantidade de Testes | Status |
+| :--- | :--- | :---: | :--- |
+| Estrutura da Página | `TESTE_HOMEPAGE.cy.js` | 8 testes | ✅ Implementado |
 
-Passo 4: Execute os testes
-Bash
 
-# Modo visual (recomendado para apresentação)
-npx cypress open
-
-# Modo linha de comando (headless)
-npx cypress run
-
-# Testes específicos (headless)
-npx cypress run --spec "TESTE_LOGIN.cy.js"
-npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
-## Testes que Serão Realizados
-### TESTES DA PÁGINA DE LOGIN (TESTE_LOGIN.cy.js)
-Grupo 1: Validação de Credenciais (9 testes)
-
-Login Bem-Sucedido - Verifica login com credenciais válidas
-
-Email Vazio - Testa quando campo email não é preenchido
-
-Senha Vazia - Testa quando campo senha não é preenchido
-
-Ambos Campos Vazios - Testa quando nenhum campo é preenchido
-
-Email Inválido - Testa email com formato incorreto
-
-Senha Muito Curta (3 dígitos) - Testa senha abaixo do mínimo
-
-Senha Curta (7 dígitos) - Testa senha quase no mínimo
-
-Email Não Cadastrado - Testa email que não existe no sistema
-
-Senha Incorreta - Testa senha errada para email válido
-
-Grupo 2: Usabilidade (5 testes)
-
-Mostrar/Esconder Senha - Testa funcionalidade do ícone de olho
-
-Link para Cadastro - Verifica navegação para página de cadastro
-
-Link para Recuperação de Senha - Verifica link funcional
-
-Email com Caracteres Especiais - Testa email válido com caracteres especiais
-
-Email em Maiúsculas - Testa se sistema é case-insensitive
-
-Grupo 3: Responsividade (6 testes)
-
-Funcionamento em Celular Pequeno - Testa em iPhone SE (375x667)
-
-Funcionamento em Tablet - Testa em iPad (768x1024)
-
-Funcionamento em Desktop - Testa em desktop comum (1366x768)
-
-Funcionamento em Tela Grande - Testa em Full HD (1920x1080)
-
-Adaptação Retrato/Paisagem - Testa ambas orientações em mobile
-
-Redimensionamento Dinâmico - Testa adaptação ao mudar tamanho
-
-### TESTES DA HOMEPAGE (TESTE_HOMEPAGE.cy.js)
-Grupo 1: Estrutura da Página (8 testes)
-
-Carregamento da Página - Verifica título e elementos principais
-
-Barra Lateral Desktop - Testa navegação em telas grandes (6 ícones)
-
-Barra Superior Mobile - Testa navegação em dispositivos móveis
-
-Menu Offcanvas Mobile - Testa menu lateral que abre/fecha
-
-Cabeçalho Desktop - Verifica título "Salas" e ícone de usuário
-
-Campo de Pesquisa Mobile - Testa funcionalidade de busca
-
-Cards das Salas - Verifica grid com 6 salas (1304-1309)
-
-Status das Salas - Testa indicadores visuais (2 vermelhas, 4 verdes)
-
-🎥 Roteiro para Apresentação
-Duração Total: 10-15 minutos
-
-Parte 1: Introdução (2 minutos)
-Apresentar o projeto RACK+
-
-Mostrar as páginas testadas (Login e Homepage)
+mepage)
 
 Explicar objetivo dos testes E2E
 
