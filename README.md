@@ -13,6 +13,8 @@ Repositório com **testes end-to-end (E2E) automatizados**, desenvolvidos em Cyp
 * **Aplicação RACK+** rodando localmente
 * Navegador **Chrome**, **Firefox** ou **Edge**
 
+## Configuração e Execução dos Testes
+
 * **Passo 1:** Instale as dependências
 
 npm install cypress --save-dev
