@@ -15,7 +15,7 @@ Repositório com **testes end-to-end (E2E) automatizados**, desenvolvidos em Cyp
 
 ## Configuração e Execução dos Testes
 
-* **Passo 1:** Instale as dependências
+* ### Passo 1:** Instale as dependências
 
 npm install cypress --save-dev
 
