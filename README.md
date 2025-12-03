@@ -48,7 +48,7 @@ Repositório com **testes end-to-end (E2E) automatizados**, desenvolvidos em Cyp
 
 ##  Testes Realizados
 
-###  Página de Login (login.spec.js)
+###  Página de Login
 
 #### Testes de Funcionalidade (9 testes)
 
@@ -85,7 +85,7 @@ Repositório com **testes end-to-end (E2E) automatizados**, desenvolvidos em Cyp
 | 19 | Retrato e paisagem | Adaptação entre orientações |
 | 20 | Redimensionamento | Adaptação ao mudar tamanho |
 
-###  Página Homepage (homepage.spec.js)
+###  Página Homepage
 
 #### Testes de Estrutura (8 testes)
 
