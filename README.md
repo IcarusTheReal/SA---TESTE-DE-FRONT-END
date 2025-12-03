@@ -42,7 +42,7 @@ Repositório com **testes end-to-end (E2E) automatizados**, desenvolvidos em Cyp
 
 | Página | Arquivo de Teste | Quantidade de Testes | Status |
 | :--- | :--- | :--- | :--- |
-| Login | `TESTE_LOGIN.cy.js` | 14 testes | ✅ Implementado |
+| Login | `TESTE_LOGIN.cy.js` | 20 testes | ✅ Implementado |
 | Homepage | `TESTE_HOMEPAGE.cy.js` | 8 testes | ✅ Implementado |
 
 
