@@ -24,18 +24,19 @@ Repositório com **testes end-to-end (E2E) automatizados**, desenvolvidos em Cyp
 
 * ### Passo 3 Execute os testes
 
-**Modo visual (recomendado para apresentação)**
+  **Modo visual (recomendado para apresentação)**
 
-npx cypress open
+  npx cypress open
 
-**Modo linha de comando**
-npx cypress run
+  **Modo linha de comando**
 
-**Testes específicos**
+  npx cypress run
 
-npx cypress run --spec "TESTE_LOGIN.cy.js"
+  **Testes específicos**
 
-npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
+  npx cypress run --spec "TESTE_LOGIN.cy.js"
+
+  npx cypress run --spec "TESTE_HOMEPAGE.cy.js"
 
 ##  Páginas Testadas
 
