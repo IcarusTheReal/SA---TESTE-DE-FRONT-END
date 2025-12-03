@@ -78,9 +78,9 @@ Repositório com **testes end-to-end (E2E) automatizados**, desenvolvidos em Cyp
 
 | # | Teste | Descrição |
 | :---: | :--- | :--- |
-| 15 | Celular pequeno | Funcionamento em iPhone SE |
+| 15 | Celular pequeno | Funcionamento em Smartphone |
 | 16 | Tablet | Funcionamento em tablets |
-| 17 | Desktop | Funcionamento em desktop comum |
+| 17 | Desktop | Funcionamento em desktop  |
 | 18 | Tela grande | Funcionamento em Full HD |
 | 19 | Retrato e paisagem | Adaptação entre orientações |
 | 20 | Redimensionamento | Adaptação ao mudar tamanho |
