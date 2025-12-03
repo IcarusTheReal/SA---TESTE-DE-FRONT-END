@@ -19,10 +19,10 @@ Repositório com **testes end-to-end (E2E) automatizados**, desenvolvidos em Cyp
 
   npm install cypress --save-dev
 
-* ## Passo 2: Configure a aplicação
+* ### Passo 2: Configure a aplicação
   Certifique-se de que sua aplicação RACK+ está rodando localmente e acessível pelo endereço correto, como http://127.0.0.1:5500/. Ajuste a URL nos arquivos de teste caso     esteja usando uma porta diferente.
 
-* ## Passo 3 Execute os testes
+* ### Passo 3 Execute os testes
 
 **Modo visual (recomendado para apresentação)**
 
